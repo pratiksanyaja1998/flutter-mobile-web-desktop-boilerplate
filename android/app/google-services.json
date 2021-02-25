@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "752442673795",
+    "project_id": "flutter-wdai",
+    "storage_bucket": "flutter-wdai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752442673795:android:a939be50e26e2f85afe9b6",
+        "android_client_info": {
+          "package_name": "com.app.mwd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752442673795-bl627plmjekajfag642ka22qq464rk8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc1LGryhyhl0rHftRJFYdhIyQoRMVeGjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752442673795-bl627plmjekajfag642ka22qq464rk8h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "752442673795-tth3j9nsi5i1spq6379jdkt00enugeoo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.mwd"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

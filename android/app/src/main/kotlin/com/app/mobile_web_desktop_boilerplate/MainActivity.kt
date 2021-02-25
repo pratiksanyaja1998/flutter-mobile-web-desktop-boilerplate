@@ -1,4 +1,4 @@
-package com.app.mobile_web_desktop_boilerplate
+package com.app.mwd
 
 import io.flutter.embedding.android.FlutterActivity
 
