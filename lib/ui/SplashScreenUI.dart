@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mobile_web_desktop_boilerplate/ui/LoginScreenUI.dart';
@@ -12,12 +13,15 @@ class _SplashScreenUIState extends State<SplashScreenUI> {
 
   @override
   void initState() {
+
     // TODO: implement initState
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
-        Get.to(LoginScreenUI());
+        Get.off(LoginScreenUI());
     });
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +45,7 @@ class _SplashScreenUIState extends State<SplashScreenUI> {
 
                 new Text("Mob-Web-Desktop",style: TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold,color:
                 Colors.blue),)
+
               ],
             ),
           ),

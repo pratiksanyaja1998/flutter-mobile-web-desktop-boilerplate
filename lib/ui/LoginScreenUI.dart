@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
+import 'package:mobile_web_desktop_boilerplate/ui/DashboardScreenUI.dart';
+
 
 class LoginScreenUI extends StatefulWidget {
   @override
@@ -13,10 +16,12 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
 
   @override
   Widget build(BuildContext context) {
+    print(" W "+MediaQuery.of(context).size.width.toString());
     return SafeArea(
       child: Scaffold(body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
+
 
         child: Center(
           child: Column(
@@ -25,11 +30,9 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
             children: [
               new FlutterLogo(
                   size: 100.0),
-
               SizedBox(
                 height: 40.0,
               ),
-
               widgetFormContainer(),
             ],
           ),
@@ -54,7 +57,7 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
                 labelText: "Enter Email or User Name",
                 fillColor: Colors.white,
                 border: new OutlineInputBorder(
-                  borderRadius: new BorderRadius.circular(25.0),
+                  borderRadius: new BorderRadius.circular(5.0),
                   borderSide: new BorderSide(
                   ),
                 ),
@@ -78,7 +81,7 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
                 labelText: "Enter Password",
                 fillColor: Colors.white,
                 border: new OutlineInputBorder(
-                  borderRadius: new BorderRadius.circular(25.0),
+                  borderRadius: new BorderRadius.circular(5.0),
                   borderSide: new BorderSide(
                   ),
                 ),
@@ -112,10 +115,10 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
     );
  }
 
-
   void signInFun() async {
-    if (_formKey.currentState.validate()) {
 
+    if (_formKey.currentState.validate()) {
+      Get.to(DashboardScreenUI());
       Fluttertoast.showToast(
           msg: "Welcome to Dashboard",
           toastLength: Toast.LENGTH_SHORT,
@@ -128,6 +131,8 @@ class _LoginScreenUIState extends State<LoginScreenUI> {
 
 
     }
+
+
 
 
   }

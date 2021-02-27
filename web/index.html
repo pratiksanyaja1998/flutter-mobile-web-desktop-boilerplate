@@ -25,11 +25,15 @@
 
   <title>mobile_web_desktop_boilerplate</title>
   <link rel="manifest" href="manifest.json">
+  <!-- Firebase Setup -->
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
@@ -93,6 +97,17 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyC9lVkm2SVm-U2y9RgswnGJhFeqTvsZPNY",
+        authDomain: "flutter-wdai.firebaseapp.com",
+        projectId: "flutter-wdai",
+        storageBucket: "flutter-wdai.appspot.com",
+        messagingSenderId: "752442673795",
+        appId: "1:752442673795:web:2a60249185f46542afe9b6"
+      };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
